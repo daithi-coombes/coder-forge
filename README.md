@@ -7,11 +7,11 @@ The `Coder Forge` has two aims:
  1. is to be a place where adults, young and old, can come to learn to trade
  within the software development industry.
  2. is to be a place where adults, yound and old, can meetup and discuss coding
- and design from an Hobby point of view.
+ and design from an hobby point of view.
 
-These, workshops, or coder forges, are mimicked on the popular 'Coder Dojo' for
+These, workshops, or coder forges, are mimicked on the popular [Coder Dojo](https://coderdojo.com/) for
 kids, with the exception of being for those 17yrs and up. Lessons will be
-thought using, predominantly, open source tools and from a DevOp's methodology.
+thought using, predominantly, open source tools and from a [DevOp](https://en.wikipedia.org/wiki/DevOps) methodology.
 
 The classes are to be stress free, without any set out curriculum, and they
 must also support and work with other open projects in their locality.
@@ -20,18 +20,26 @@ must also support and work with other open projects in their locality.
 Initially I was going to follow the current standard of teaching with `python`
 but I think that maybe `JavaScript` based technologies might be more of a fit.
 `JavaScript`'s prototype nature means that we can:
- - Create patterns to describe OOP or scripting arhitectures
- - NodeJS for server logic
- - Meteor for client logic
- - d3 for design
+ - Create [patterns](https://en.wikipedia.org/wiki/Software_design_pattern) to describe [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming) or [scripting](https://en.wikipedia.org/wiki/Scripting_language) arhitectures
+ - [NodeJS](https://nodejs.org/) for server logic
+ - [Meteor](https://www.meteor.com/) for client logic
+ - [d3js](http://d3js.org/) for design
 
 As you can see all technologies are open source, so do expect random rants on
 the shortcomings of closed source.
+
+# Additional Resources
+As well as the technologies we will also be supporting:
+ - [MeetUp](http://meetup.com)
+ - [ODesk](http://odesk.com)
+ - [Gun.io](http://gun.io)
+ - [Guru.com](http://guru.com)
 
 # Roadmap
  - setup more forge's
  - build international community
  - colonize mars
+ - grow coffee
  - make cookies
 
 | License |
