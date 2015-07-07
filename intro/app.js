@@ -2,34 +2,47 @@
  * @author daithi coombes <webeire@gmail.com>
  */
 
-// dataType variable
-var element = "this is an element";
+/**
+ * Button Class.
+ *
+ * Demonstrates one of many patterns for classes and oop in javascript.
+ *
+ * @author foobar mcneil <foobar.mcneil@example.com>
+ */
+function ClassButton(){
 
-// dataType function
-function foo(){
-    element = "foo";
-}
+    var self = {};
 
-// dataType object
-function fooObj(){
+    /**
+     * Just a plain old string.
+     * @type {String}
+     */
+    self.text = 'This is a string';
 
-    //private
-    var this_is_internal_variable = 'Hidden inside fooObj()';
-
-    //public - internal function also known as 'method'
-    this.updateElement = function(){
-        element = "fooObj";
+    /**
+     * Constructor method.
+     * @Constructor
+     * @member ClassButton
+     * @private
+     */
+    var init = function(){
+        console.log('constructed');
     }
+
+    /**
+     * Click callback.
+     *
+     * Handles clicky thingy's
+     * @member ClassButton
+     * @return {boolean} true - always returns true.
+     */
+    self.click = function(){
+        console.log('you clicked');
+    }
+
+    init();
+    return self;
 }
 
-// dataType var's initial state (var element)
-console.log(element);
-
-// call function (function foo())
-foo();
-console.log(element);
-
-// create obj & call method (fooObj.updateElement())
-var myObject = new fooObj();
-myObject.updateElement();
-console.log(element);
+var btn = new ClassButton();
+btn.click();
