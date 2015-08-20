@@ -12,6 +12,8 @@ RUN \
   apt-get install -y curl
   curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -
   apt-get install --yes nodejs
+  apt-get install --yes build-essential
+  apt-get install --yes npm
 
 # Add files.
 ADD root/.bashrc /root/.bashrc
