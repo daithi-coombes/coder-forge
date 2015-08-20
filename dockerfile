@@ -9,6 +9,7 @@ FROM ubuntu:14.04
 
 # Install.
 RUN \
+  apt-get install -y curl
   curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -
   apt-get install --yes nodejs
 
