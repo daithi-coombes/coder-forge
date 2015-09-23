@@ -1,6 +1,12 @@
 # coder-forge
-A place to forge out code, to smyth out patterns and designs
+A place to learn how to forge out code, to smyth out patterns and designs.
+Complete beginners welcome, bring your own laptop.
 
+@see [flyer.png](flyer.png) for more info.
+
+# where and when
+Every Wednesday 18.30 - 19.30
+23 Fitzwilliam Square (South), Dublin 2, D02 RV08, Ireland
 
 # About
 The `Coder Forge` has two aims:
