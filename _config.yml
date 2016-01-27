@@ -4,7 +4,7 @@ email: webeire@gmail.com
 description: > #
   A place to learn how to forge out code, to smyth out patterns and designs.
   Complete beginners welcome, bring your own laptop.
-baseurl: ""
+baseurl: "coder-forge"
 url: "http://daithi-coombes.github.io/coder-forge" # the base hostname & protocol for your site
 github_username:  daithi-coombes
 
