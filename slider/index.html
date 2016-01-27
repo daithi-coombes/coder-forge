@@ -1,0 +1,214 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="bower_components/reveal.js/css/theme/black.css">
+    <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+
+                <section>
+                  ### slide 1 - comments
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// this is a comment
+                  </code></pre>
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+/**
+ * and this is
+ * a multiline comment.
+ */
+                  </code></pre>
+                </section>
+
+
+                <section>
+                  ### slide 2 - variables
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// variables
+var myString = 'this is my string';
+var myInteger = 10;
+var my_other_integer = 15;
+                  </code></pre>
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// variables can be used together,
+// with their result passed into things (eg alert)
+alert(
+  myString
+  + '\nand here is the sum: '
+  + (myInteger+my_other_integer)
+);
+                  </code></pre>
+                </section>
+
+
+                <section>
+                  ### slide 3 - keywords, operators &amp; symbols
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+/**
+ * keywords are reserved words, they can't be used as variable names
+ */
+                  </code></pre>
+                  Keywords
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// var, function and new are examples of keywords. These are errors
+var var = 'foobar'
+var new = 'what went wrong?'
+var function = 'oops'
+                  </code></pre>
+                  Operators (+ - * / %)
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// maths symbols, aka operators, operate. They can't be variable names.
+var + = 'what happens if I + a plus?'
+                  </code></pre>
+                  Symbols?
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// some languages (very few) let characters be variable names!
+// javascript is one such language (eg the jQuery library)
+var $ = 'my variable name is dollar!'
+                  </code></pre>
+                </section>
+
+
+                <section>
+                  ### slide 4 - functions
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// follows same naming conventions (namespacing) as variables
+function doThisCode(){
+
+  // put code in here and `return` a value
+  return 'return a string'
+}
+doThisCode()    // call the function (or run the function)
+
+// functions can also be stored in variables
+var myFunc = doThisCode
+var theResult = myFunc()
+// theResult now equals 'return a string'
+                  </code></pre>
+                  Parameters
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// parameters can be passed into functions
+var myFunc = function(parameter1){
+  return parameter1
+}
+var five = myFunc(5)
+                  </code></pre>
+                </section>
+
+
+                <section>
+                  ### slide 5 - classes
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// a class is a function with functions in it.
+function MyClass(){
+
+  // an internal function, aka a method.
+  // This is public, can be called outside of class
+  this.myMethodPublic = function(){
+
+    // block of code here
+  }
+
+  // a private method, only callable inside class
+  function myMethodPrivate(){
+
+    // block of code here
+  }
+}
+                  </code></pre>
+                </section>
+
+
+                <section>
+                  ### slide 6 - objects
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+/**
+ * The 'new' keywork is special.
+ * It packs the class in a variable to create an object.
+ */
+                  </code></pre>
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// This is known as constructing the class as an object.
+var myObj = new MyClass()
+
+// now we can call the public method (see previous slide)
+myObj.myMethodPublic()
+
+// Error: this will throw an error, we can't call the private method.
+myObj.myMethodPrivate()
+                  </code></pre>
+                </section>
+
+
+                <section>
+                  ### slide 7 - cheatsheet
+                  <pre><code class="hljs hljs javascript" data-trim contenteditable>
+// variable
+var num1 = 5
+
+// function
+var increment_by_five = function(num){
+
+  return num+5
+}
+
+// class
+function IncrementClass(){
+
+  // property
+  this.num
+
+  // public
+  this.setNum = function(num){
+    this.num = num
+  }
+
+  // public
+  this.getResult = function(){
+    return this.increment()
+  }
+
+  // private
+  function increment(){
+    return this.num+5
+  }
+}
+
+// object
+var myObject = new IncrementClass()
+myObject.setNum(234567890)
+alert( myObject.getResult() )
+                  </code></pre>
+                </section>
+            </div>
+        </div>
+        <script src="bower_components/headjs/dist/1.0.0/head.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.js"></script>
+        <script src="bower_components/reveal.js/plugin/highlight/highlight.js"></script>
+        <script>
+          Reveal.initialize();
+          Reveal.initialize({
+    				controls: true,
+    				progress: true,
+    				history: true,
+    				center: true,
+
+    				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+    				// Optional reveal.js plugins
+    				dependencies: [
+    					//{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    					//{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    					//{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    					//{ src: 'plugin/zoom-js/zoom.js', async: true },
+    					//{ src: 'plugin/notes/notes.js', async: true }
+    				]
+    			});
+        </script>
+    </body>
+</html>
