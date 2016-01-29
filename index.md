@@ -11,7 +11,7 @@ tagline: A place to learn how to forge out code, to smyth out patterns and desig
 programmers (guru's).</p>
 
 <p>There is no set curriculum and no costs either. Because of this these weekly
-meetups will be on an open door bases</p>
+meetups will be on an open door basis.</p>
 
 <p>As you can see this site is a work in progress, as is the project on a whole,
 but please do drop into our next <a href="http://www.meetup.com/Dublin-Coder-Forge/events/227966239/">meetup</a> and see what it is all about.</p>
