@@ -1,0 +1,22 @@
+{
+  "name": "coder-forge",
+  "homepage": "https://daithi-coombes.github.io/coder-forge",
+  "authors": [
+    "Daithi Coombes <webeire@gmail.com>"
+  ],
+  "description": "coder forge",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/assets/themes/coder-forge/bower_components",
+    "test",
+    "tests"
+  ]
+}
