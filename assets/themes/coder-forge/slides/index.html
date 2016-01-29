@@ -145,43 +145,65 @@ myObj.myMethodPrivate()
 
 
                 <section>
-                  ### slide 7 - cheatsheet
+                  ### slide 7 -
+                  <a href="https://github.com/daithi-coombes/coder-forge/blob/master/docs/cheatsheet.md" target="_new">cheatsheet</a>
                   <pre><code class="hljs hljs javascript" data-trim contenteditable>
-// variable
-var num1 = 5
+                    ```javascript
+/**
+ * Programming basics cheatsheet,
+ * in javascript.
+ */
 
-// function
-var increment_by_five = function(num){
+ // variable
+ var num1 = 5
 
-  return num+5
-}
 
-// class
-function IncrementClass(){
+ // function
+ var increment_by_five = function(num){
+   return num+5
+ }
 
-  // property
-  this.num
+ var res = increment_by_five( num1 )
+ console.log('increment_by_five(): '+res)
 
-  // public
-  this.setNum = function(num){
-    this.num = num
-  }
 
-  // public
-  this.getResult = function(){
-    return this.increment()
-  }
+ // class
+ function IncrementClass(){
 
-  // private
-  function increment(){
-    return this.num+5
-  }
-}
+   // set this object in current scope
+   var self = this
 
-// object
-var myObject = new IncrementClass()
-myObject.setNum(234567890)
-alert( myObject.getResult() )
+   // property
+   self.num
+
+   // public method
+   self.setNum = function(num){
+     self.num = num
+   }
+
+   // public method
+   self.plusFive = function(){
+     doWork()
+     return this.num
+   }
+
+   // private method
+   function doWork(){
+     self.num = self.num+5
+   }
+ }
+
+
+ // construct an object
+ var incrementor = new IncrementClass()
+
+ //call objects public method
+ incrementor.setNum(5)
+ console.log('incrementor.num(): '+incrementor.num)
+
+ //call objects private method, through public method.
+ var res = incrementor.plusFive()
+ console.log('incrementor.plusFive() '+res)
                   </code></pre>
                 </section>
             </div>
