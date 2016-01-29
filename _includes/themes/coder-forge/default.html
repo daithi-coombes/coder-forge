@@ -26,6 +26,12 @@
     <link href="{{ ASSET_PATH }}/css/pushMenu.css" rel="stylesheet" type="text/css">
     <link href="{{ ASSET_PATH }}/css/cf.css?body=1" rel="stylesheet" type="text/css" media="all">
 
+    {% if page.css %}
+      {% for stylesheet in page.css %}
+      <link rel="stylesheet" href="{{ ASSET_PATH }}/css/{{ stylesheet }}" media="screen" type="text/css">
+      {% endfor %}
+    {% endif %}
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -134,5 +140,12 @@
 
     <script src="{{ ASSET_PATH }}/bower_components/jquery/dist/jquery.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+
+    {% if page.js %}
+      {% for js_file in page.js %}
+      <script src='{{ ASSET_PATH }}/js/{{ js_file }}' type="text/javascript"></script>
+      {% endfor %}
+    {% endif %}
+
   </body>
 </html>
