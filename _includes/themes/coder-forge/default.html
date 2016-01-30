@@ -148,7 +148,7 @@
 
     {% if page.js %}
       {% for js_file in page.js %}
-      <script src='{{ ASSET_PATH }}/js/{{ js_file }}' type="text/javascript"></script>
+      <script src='{{ ASSET_PATH }}/{{ js_file }}' type="text/javascript"></script>
       {% endfor %}
     {% endif %}
 
