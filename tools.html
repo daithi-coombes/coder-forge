@@ -1,0 +1,29 @@
+---
+layout: page
+title: "Tools"
+description: "Tools &amp; Resources"
+js:
+  - js/tools.js
+  - bower_components/mixitup/src/jquery.mixitup.js
+css: tools.css
+---
+{% include JB/setup %}
+
+<a href="#" class="btn btn-default filter" data-filter="all">All</a>
+<a href="#" class="btn btn-default filter" data-filter=".languages">Languages</a>
+<a href="#" class="btn btn-default filter" data-filter=".ides">IDE's</a>
+<br>
+<div class="cards" id="cards">
+  <div class="mix languages javascript node">
+    <a href="https://nodejs.org/en/" target="_new">NodeJS</a>
+    <p>Allows JavaScript to be used on the server</p>
+  </div>
+  <div class="mix sandboxs">Item</div>
+  <div class="mix">Item</div>
+  <div class="mix ides">Item</div>
+  <div class="mix sandboxs ides">Item</div>
+  <div class="mix sandboxs">Item</div>
+  <div class="mix ides">Item</div>
+  <div class="mix sandboxs ides">Item</div>
+  <div class="mix sandboxs">Item</div>
+</div>
