@@ -1,0 +1,19 @@
+---
+layout: page
+title: "Posts"
+description: ""
+---
+{% include JB/setup %}
+
+<div class="filter-buttons">
+  <div class="filter" data-filter="all">All</div>
+  <div class="filter" data-filter="plan">Plan</div>
+</div>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <div class="mix">
+      <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+    </div>
+  {% endfor %}
+</div>
