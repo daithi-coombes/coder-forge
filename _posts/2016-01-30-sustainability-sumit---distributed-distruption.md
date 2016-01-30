@@ -35,7 +35,7 @@ and like everything it comes with its downsides. But when it comes to decisions
 on pollution, environmental impact - sustainability - the majority decision
 comes up top. A problem remains, I was told by the salesman at the stall, the
 client that makes the final decision doesn't always choose the most
-sustainable decision. [link](http)
+sustainable decision. [US top employee owned construction companies](https://www.nceo.org/articles/employee-ownership-100)
 
 If the macro were taken as a hierarchical and tiered distributed system, then
 this result would come as a surprise. However, if we take the macro, the
