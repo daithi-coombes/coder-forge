@@ -1,12 +1,11 @@
-div.cards{
-
+div#cards{
+  height: 900px;
 }
 div.cards .mix{
   display: none;
   margin: 10px;
   padding: 5px;
-  min-width: 200px;
-  max-width: 320px;
+  width: 300px;
   min-height: 140px;
   border: 1px solid;
   border-radius: 5px;

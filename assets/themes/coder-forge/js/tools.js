@@ -1,3 +1,3 @@
-$(document).ready(function(){
+$(window).ready(function(){
   $('#cards').mixItUp()
 })
