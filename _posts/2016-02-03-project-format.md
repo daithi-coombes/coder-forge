@@ -30,3 +30,17 @@ So for next weeks format I'm proposing 7.30 to 8.00 talk, most probably about
 dealing with clients and targeting jobs, then from 8pm to 9pm we code. I'll
 think up some problems to be solved during week. This would also make the forge
 much more monitor orientated, so help will be needed here as well ;)
+
+To all who made it tonight... it was great to see so many faces. It was definitely a grand experiment and I think its results are showing the direction the format should take. For next week I'm proposing 30 mins of 'show & tell' starting at 7.30 and then 1 hour of mentored coding.
+
+Some of topics lightly touched on tonight were:
+ - upwork.com
+ - guru.com
+ - gun.io
+ - nodejs
+ - meteorjs
+ - unit testing
+ - clean code
+ - building freelance profile
+
+Next expect less topics and more code, code, code!
