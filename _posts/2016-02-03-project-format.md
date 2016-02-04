@@ -26,8 +26,8 @@ solved during the hour or so of learning without constriction. The problems
 could be rudimentary such as use jquery to make a div background color flicker,
 right up to window api's, frameworks modules & patterns.
 
-So for next weeks format I'm proposing 7.30 to 8.00 talk, most probably about
-dealing with clients and targeting jobs, then from 8pm to 9pm we code. I'll
+So for next weeks format I'm proposing 1830 to 1900 talk, most probably about
+dealing with clients and targeting jobs, then from 1900 to 2000 we code. I'll
 think up some problems to be solved during week. This would also make the forge
 much more monitor orientated, so help will be needed here as well ;)
 
