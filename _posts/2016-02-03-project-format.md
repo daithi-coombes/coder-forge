@@ -42,4 +42,4 @@ Some of topics lightly touched on tonight were:
  - clean code
  - building freelance profile
 
-Next expect less topics and more code, code, code!
+Next week expect far less topics and more code, code, code!
