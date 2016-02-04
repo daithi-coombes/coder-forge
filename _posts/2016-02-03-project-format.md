@@ -16,8 +16,8 @@ The need to code. For those that were more proficient with programming it must
 have been painful, as I seem to have given more to the former rather than the
 latter.
 
-I think there is the need for some direction given from a talk on the one
-hand but that learning without constriction far out weighs this need. So I'm
+I think there is the need for some direction thats given from a talk on the one
+hand, but that learning without constriction far out weighs this need. So I'm
 proposing 30 minutes of slide show lessons and then 1 hour, or more, of learning
 without constriction. Mentored coding.
 
@@ -32,6 +32,7 @@ think up some problems to be solved during week. This would also make the forge
 much more monitor orientated, so help will be needed here as well ;)
 
 Some of topics lightly touched on tonight were:
+
  - upwork.com
  - guru.com
  - gun.io
